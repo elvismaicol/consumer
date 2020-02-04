@@ -28,6 +28,11 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
+    
+    //Reference method com método estático
+    public static void staticPriceUpdate(Product p) {
+        p.setPrice(p.getPrice() * 1.1);
+    }
 
     @Override
     public String toString() {
