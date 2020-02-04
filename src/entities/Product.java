@@ -33,6 +33,11 @@ public class Product {
     public static void staticPriceUpdate(Product p) {
         p.setPrice(p.getPrice() * 1.1);
     }
+    
+    //Reference method com método NÃO estático
+    public void nonStaticPriceUpdate() {
+        price = price * 1.1;
+    }
 
     @Override
     public String toString() {
